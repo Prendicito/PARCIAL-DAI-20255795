@@ -39,7 +39,8 @@ class Recurso(RegistroAtencion):
         if recursos.count > 4:
             raise ValueError("Limite de recursos por atencion alcanazado")
         
-        if self.lista_espera > 10:
+        if self.lista_espera >10 :
+            estado_registro = "CUENTA_SUSPENDIDA"
 
 
    
